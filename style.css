@@ -1,0 +1,24 @@
+
+body {
+  background-color: #f0f2f5;
+}
+h2 {
+  margin-bottom: 20px;
+}
+.shadow {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Fix height of carousel on all devices */
+.fixed-carousel-height {
+  max-height: 50vh; /* Half of screen height */
+  overflow: hidden;
+}
+
+/* Make all carousel images uniform */
+.carousel-img {
+  object-fit: cover;
+  height: 50vh;
+  width: 100%;
+}
+

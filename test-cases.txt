@@ -1,0 +1,8 @@
+# Test Cases
+1. ✅ Register with valid email, address, image → Success.
+2. ❌ Register with invalid email → Error alert.
+3. ❌ Register with short address → Error alert.
+4. ❌ No image selected → Error alert.
+5. ✅ Login with valid email/password → Simulated success.
+6. ❌ Login with invalid email → Error alert.
+7. ❌ Login with short password → Error alert.
