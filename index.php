@@ -1,3 +1,7 @@
+<?php
+// Start session in case we use it later for login checks
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,17 +12,18 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">DIU Admission</a>
+    <a class="navbar-brand" href="index.php">DIU Admission</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="registration.php">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
       </ul>
     </div>
   </div>
@@ -34,23 +39,22 @@
   </div>
 
   <div class="carousel-inner fixed-carousel-height">
-  <div class="carousel-item active">
-    <img src="./images/1.jpg" class="d-block w-100 carousel-img" alt="..." />
+    <div class="carousel-item active">
+      <img src="./images/1.jpg" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/2.jpg" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/3.jpg" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/4.jpg" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/5.jpg" class="d-block w-100 carousel-img" alt="...">
+    </div>
   </div>
-  <div class="carousel-item">
-    <img src="./images/2.jpg" class="d-block w-100 carousel-img" alt="..." />
-  </div>
-  <div class="carousel-item">
-    <img src="./images/3.jpg" class="d-block w-100 carousel-img" alt="..." />
-  </div>
-  <div class="carousel-item">
-    <img src="./images/4.jpg" class="d-block w-100 carousel-img" alt="..." />
-  </div>
-  <div class="carousel-item">
-    <img src="./images/5.jpg" class="d-block w-100 carousel-img" alt="..." />
-  </div>
-</div>
-
 </div>
 
 <section class="container mt-5">
@@ -82,11 +86,10 @@
   </div>
 </section>
 
-
 <section class="bg-primary text-white text-center p-4 mt-5">
   <h4>Ready to join DIU?</h4>
   <p>Register now and take your first step toward success!</p>
-  <a href="registration.html" class="btn btn-light">Apply Now</a>
+  <a href="registration.php" class="btn btn-light">Apply Now</a>
 </section>
 
 <footer class="bg-dark text-white text-center p-3 mt-5">
